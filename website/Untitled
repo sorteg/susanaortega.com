@@ -1,0 +1,23 @@
+int main(int argc, char** argv) {
+
+    string check = "<a href=\"";
+    vector<std::string> urlmap;
+
+    ifstream t("your_file.ext");
+    stringstream buffer;
+    buffer << t.rdbuf();
+
+    std::string textBig = buffer.str();
+
+
+    urlmap = performCheck(check, textBig);
+
+    for(int iterator = 0; iterator < urlmap.size(); iterator++)
+    {
+        cout << urlmap[iterator]<< endl;
+    }
+
+    system("PAUSE");
+
+    return 0;
+}
