@@ -10,7 +10,10 @@ autom4te.cache/
 *.tar.gz
 tarballs/
 test-results/
+
+# Less folder and files
 less.js-master/
+website/less.js
 
 # Mac bundle stuff
 *.dmg
